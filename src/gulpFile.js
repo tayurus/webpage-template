@@ -8,7 +8,7 @@ var rename = require('gulp-rename');
 let src = {
     css: ["**/*.css", "!node_modules/**/*.css"],
     js: ["**/*.js", "!node_modules/**/*.js", "!gulpFile.js"],
-    pages: ["pages/**/*.jade"],
+    pages: ["pages/**/*.jade", "blocks/**/*.jade"],
     img: ["**/*.png", "**/*.jpg", "**/*.svg"],
 }
 
