@@ -9,7 +9,7 @@ let cleanCSS = require('gulp-clean-css');
 let src = {
     css: ["**/*.css", "!node_modules/**/*.css"],
     js: ["**/*.js", "!node_modules/**/*.js", "!gulpFile.js"],
-    pages: ["pages/**/*.jade", "blocks/**/*.jade"],
+    pages: ["pages/**/*.jade"],
     img: ["**/*.png", "**/*.jpg", "**/*.svg", "**/*.ico"],
 }
 
