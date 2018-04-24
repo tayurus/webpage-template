@@ -14,8 +14,8 @@ let src = {
 }
 
 let dist = {
-    main: "../dist/",
-    img: "../dist/img"
+    main: "build/",
+    img: "build/img"
 }
 
 gulp.task("build", function() {

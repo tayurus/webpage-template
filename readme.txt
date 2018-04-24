@@ -1,4 +1,10 @@
-File structure descripition:
+This template contains:
+	gulp
+	bootstrap 4
+	jquery 3.3
+	normalize.css
+
+File structure description:
 	blocks - BEM blocks
 	css - common css
 	fonts - common fonts
@@ -10,4 +16,7 @@ File structure descripition:
 To run project do:
 1. npm install
 2. gulp build
-3. go to folder "../dist" and open "index.html"
+3. go to folder "build" and open "index.html"
+
+Use it for free!
+https://github.com/tayurus
