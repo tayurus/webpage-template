@@ -3,6 +3,7 @@ This template contains:
 	bootstrap 4
 	jquery 3.3
 	normalize.css
+	owl-carousel
 
 File structure description:
 	blocks - BEM blocks
