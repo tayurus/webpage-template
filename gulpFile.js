@@ -24,12 +24,12 @@ gulp.task("build", function() {
     //PAGES
     gulp.src(src.pages).pipe(jade({
         pretty: "\t"
-    })).pipe(gulp.dest(dist.main)).pipe(reload({stream:true}));;
+    })).pipe(gulp.dest(dist.main));
 
     // IMG
     gulp.src(src.img).pipe(rename({
         dirname: ''
-    })).pipe(gulp.dest(dist.img)).pipe(reload({stream:true}));;
+    })).pipe(gulp.dest(dist.img));
 
     //CSS
     let autoprefixBrowsers = ['> 1%', 'last 2 versions', 'firefox >= 4', 'safari 7', 'safari 8', 'IE 8', 'IE 9', 'IE 10', 'IE 11'];
@@ -40,13 +40,13 @@ gulp.task("build", function() {
         .pipe(autoprefixer({
             browsers: autoprefixBrowsers
         }))
-        .pipe(gulp.dest(dist.main)).pipe(reload({stream:true}));;
+        .pipe(gulp.dest(dist.main));
 
     //JS
-    gulp.src(src.js).pipe(concat("script.js")).pipe(gulp.dest(dist.main)).pipe(reload({stream:true}));;
+    gulp.src(src.js).pipe(concat("script.js")).pipe(gulp.dest(dist.main))
 
     //FONTS
-    gulp.src("fonts/**/*.*",  { base: './' }).pipe(gulp.dest(dist.main)).pipe(reload({stream:true}));;
+    gulp.src("fonts/**/*.*",  { base: './' }).pipe(gulp.dest(dist.main))
 })
 
 gulp.task('browserSync', function() {
